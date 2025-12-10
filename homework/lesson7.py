@@ -1,4 +1,3 @@
-import math
 # Задача 1:
 numbers = [x**3 for x in range(1, 8)]
 print(numbers)
