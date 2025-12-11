@@ -5,8 +5,8 @@ number = 42
 print(type(number))
 floatnumber = 3.14
 print(type(floatnumber))
-list = [1, 2, 3]
-print(type(list))
+check_one = [1, 2, 3]
+print(type(check_one))
 
 # ЗАДАНИЕ 2: Преобразование регистра строк
 x = "python PROGRAMMING"
@@ -30,7 +30,7 @@ print(newz2)
 
 # ЗАДАНИЕ 5: Замена подстрок
 getstring = "Я изучаю Python. Python - это круто!"
-new_getstring = getstring.replace("Python","Java")
+new_getstring = getstring.replace("Python", "Java")
 print(new_getstring)
 
 # ЗАДАНИЕ 6: Поиск и подсчет
