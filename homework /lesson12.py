@@ -1,7 +1,7 @@
 # Ramil
 # ЗАДАЧА 2: Обработка текстовых данных
 
-text = "Python,Java,JavaScript,Python,C++,Java"
+text = "Python,Java,JavaScript,Python,C++,Java,Java"
 # 1. Разделите строку по запятым и создайте список языков ()
 # 2. Преобразуйте список в множество, чтобы убрать дубликаты
 # 3. Создайте словарь, где ключ - язык, а значение - сколько раз он встречается
@@ -25,12 +25,21 @@ for x in new_text:
 print(count_1)
 
 # 4. Найдите язык, который встречается чаще всего
-howmuch = max(count_1)
+howmuch = max(count_1, key=count_1.get)
 print(howmuch)
 
 # 5. Объедините уникальные языки обратно в строку через точку с запятой
 print("; ".join(unique_text))
 
 # 6. Проверьте, все ли языки в строке состоят только из бук
-check = text.isalpha()
+languages = text.split(",")
+check = True
+
+for lang in languages:
+    lang_1 = lang.replace("+", "")
+    if lang_1.isalpha():
+        check = True
+    else:
+        check = False
+
 print(check)
