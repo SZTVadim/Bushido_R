@@ -31,10 +31,9 @@ group2 = {"Петр", "Анна", "Сергей", "Ольга"}
 group3 = group2 & group1
 print(group3)
 
-group_new1 = group1.copy()
-group_new2 = group2.copy()
-group_new1.update(group_new2)
-print(group_new1)
+all_students = group1.copy()
+all_students.update(group2)
+print(all_students)
 
 group1_unique = group1 - group2
 print(group1_unique)
