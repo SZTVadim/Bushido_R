@@ -31,15 +31,19 @@ print(howmuch)
 # 5. Объедините уникальные языки обратно в строку через точку с запятой
 print("; ".join(unique_text))
 
-# 6. Проверьте, все ли языки в строке состоят только из бук
+# 6. Проверьте, все ли языки в строке состоят только из букв
 languages = text.split(",")
+print(languages)
 check = True
 
 for lang in languages:
     lang_1 = lang.replace("+", "")
+    print(lang_1)
+
     if lang_1.isalpha():
-        check = True
+        print("все ок")
     else:
+        print("не ок")
         check = False
 
 print(check)
