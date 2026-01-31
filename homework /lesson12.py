@@ -37,13 +37,8 @@ print(languages)
 check = True
 
 for lang in languages:
-    lang_1 = lang.replace("+", "")
-    print(lang_1)
 
-    if lang_1.isalpha():
-        print("все ок")
-    else:
-        print("не ок")
+    if not lang.isalpha():
         check = False
 
 print(check)
