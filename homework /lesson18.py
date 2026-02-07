@@ -39,9 +39,8 @@ class Zoo:
     def get_animals(self):
         return self.__animals
 
-
-def animal_sound(animal: Animal):
-    animal.make_sound()
+    def animal_sound(self, animal: Animal):
+        animal.make_sound()
 
 
 dog1 = Dog("Бобик", 3)
@@ -53,10 +52,10 @@ zoo.add_animal(dog1)
 zoo.add_animal(dog2)
 zoo.add_animal(cat1)
 
-animal_sound(dog1)
-animal_sound(cat1)
+zoo.animal_sound(dog1)
+zoo.animal_sound(cat1)
 
 print("Количество животных в зоопарке:", zoo.get_animals_count())
 
 for zoo_animal in zoo.get_animals():
-    animal_sound(zoo_animal)
+    zoo.animal_sound(zoo_animal)
